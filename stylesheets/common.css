@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #000;
+	padding: 30px;
+	margin: 0;
+	min-width: 1024px;
+}
+
+.main-container {
+	background-color: #fff;
+	border-radius: 3px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.floating-div {
+	position: relative;
+	float: left;
+}
+.floating-right-div {
+	position: relative;
+	float: right;
+}
+.inline-el {
+	display: inline-block;
+	vertical-align: top;
+}

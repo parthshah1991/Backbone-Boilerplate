@@ -1,0 +1,64 @@
+<div class="back-container call-invisible">
+	<span class="back-symbol"> < </span>
+	<span class="back-text">Back</span>
+</div>
+<div class="user-body-container">
+	<div class="calling-text call-show ongoing-call-hide">Calling ...</div>
+	<div class="calling-timer ongoing-call-show">00:00</div>
+	<div class = "user-upper-section animated">
+		<div class="call-circle user-contact-circle inline-el call-hide"></div>
+		<div class="pic-circle inline-el"></div>
+		<div class="message-circle user-contact-circle inline-el call-hide"></div>
+	</div>
+	<div class="user-name-container">
+		<div class="user-name"><%= name %></div>
+		<div class="ratings-bar-container">
+			<%var width = personal_data.ratings / 1300 * 100%>
+			<div class="ratings-bar-inner ratings-bar-inner-fixed-width" style="width:<%=width%>%"></div>
+		</div>
+		<div class="points-container">
+			<span class="ratings-given"><%= personal_data.ratings %></span>
+			<span class="total-ratings">/ 1300</span>
+		</div>
+	</div>
+	<div class="user-basic-details-container">
+		<div class="user-designation"><%= personal_data.designation %></div>
+		<div class="user-email call-hide"><%= personal_data.email %></div>
+	</div>
+	<div class="additional-details-container call-hide additional-animation">
+		<div class="left-detail-section detail-section inline-el">
+			<div class="detail-container">
+				<div class="detail-label">Mobile</div>
+				<div class="detail-text"><%= personal_data.mobile %></div>
+			</div>
+			<div class="detail-container">
+				<div class="detail-label">Manager</div>
+				<div class="detail-text"><%= personal_data.manager %></div>
+			</div>
+			<div class="detail-container">
+				<div class="detail-label">Skill</div>
+				<div class="detail-text"><%= personal_data.skill %></div>
+			</div>
+		</div>
+		<div class="right-detail-section detail-section inline-el">
+			<div class="detail-container">
+				<div class="detail-label">Location</div>
+				<div class="detail-text"><%= personal_data.location %></div>
+			</div>
+			<div class="detail-container">
+				<div class="detail-label">Extension</div>
+				<div class="detail-text"><%= personal_data.extension %></div>
+			</div>
+			<div class="detail-container">
+				<div class="detail-label">Last Activity</div>
+				<div class="detail-text"><%= personal_data.last_activity %></div>
+			</div>
+		</div>
+	</div>
+	<div class="call-button-section call-show">
+		<div class="button-container">
+			<div class="button-mute button-circle inline-el during-call-show"></div>
+			<div class="button-disconnect button-circle inline-el"></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,419 @@
+/******* Header  Styles Starts*********/
+
+.header-container {
+	width: 100%;
+	height: 70px;
+	background-color: #dfe5ee;
+	border-bottom: 1px solid #d3d3db;
+	white-space: nowrap;
+}
+
+.header-left-container {
+	padding-left: 35px;
+}
+.header-right-container {
+	padding-right: 35px;
+	position: relative;
+	z-index: 1;
+}
+.circle {
+	border-radius: 50%;
+	background-color: blue;
+	width: 20px;
+	height: 20px;
+	margin: 23px auto 0px;
+}
+.medium-container {
+	position: relative;
+	float: right;
+}
+.medium {
+	width: 75px;
+	height: 100%;
+	border-left: 1px solid #d3d3db;
+	margin-left: -5px;
+	cursor: pointer;
+}
+.medium:hover {
+	background-color: #fff;
+}
+
+.name-container {
+	color: #526b8d;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.team-members {
+	color: #526b8d;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.close-icon {
+	font-size: 24px;
+	color: #526b8d;
+	float: right;
+	margin-top: 18px;
+	transform: rotate(45deg);
+	font-weight: bold;
+}
+
+/******* Header  Styles Ends *********/
+
+.body-container {
+	position: relative;
+}
+
+/************** Left Section Starts *******************/
+
+.left-section {
+	width: 65%;
+	margin-right: -5px;
+	white-space: normal;
+	border-right: 1px solid #d5d7dd;
+}
+.chat-item-container {
+	padding: 30px;
+	border-bottom: 1px solid #eaecf3;
+	padding-left: 35px; 
+	transition: 0.3s opacity ease-in-out;
+}
+.chat-information {
+	width: 90%;
+	margin-left: 20px;
+}
+.chat-author {
+	font-size: 20px;
+	color: #526b8d;
+	font-weight: bold;
+}
+.chat-text {
+	margin-top: 12px;
+	line-height: 24px;
+	color: #aaaab2;
+}
+.chat-input-container {
+	padding: 30px;
+	position: relative;
+}
+.chat-input-container .attachment-symbol {
+	position: absolute;
+	right: 40px;
+	bottom: 45px;
+}
+.input-chat-text {
+	height: 40px;
+	width: 100%;
+	padding-left: 20px;
+	font-size: 14px;
+}
+.chat-attachment-container {
+	height: 40px;
+	margin-left: 65px;
+	margin-top: 20px;
+	background-color: #f7f7fd;
+	padding: 12px 15px;
+}
+.attachment-file-name {
+	margin-left: 15px;
+	color: #969da4;
+	font-weight: bold;
+}
+.attachment-symbol {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #969da4
+}
+.chat-attachment-container .close-icon {
+	margin-top: -5px;
+}
+.hide-opacity {
+	opacity: 0;
+}
+
+/************** Left Section Ends *******************/
+
+
+/************** Right Section Starts *******************/
+.right-section {
+	width: 35%;
+	border-left: 1px solid #d5d7dd;
+}
+.list-item-member-container {
+	height: 90px;
+	padding: 25px 0 0 30px;
+	border-bottom: 1px solid #d5d7dd;
+	cursor: pointer;
+}
+.list-team-member {
+	position: relative;
+	transform: translateY(-90px);
+	transition: 0.3s all ease-in-out;
+}
+.list-item-member-container.active {
+	border-left: 5px solid #7323dc;
+	background-color: #e6e9f1;
+}
+.member-pic {
+	width: 45px;
+	height: 45px;
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+}
+.member-online {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: 2px solid #fff;
+}
+.member-online.online {
+	background-color: #47b155;
+}
+.member-online.offline {
+	background-color: #7d8ba0;
+}
+.member-name {
+	margin-left: 20px;
+	font-size: 18px;
+	color: #526b8d;
+	margin-top: 10px;
+}
+.call-duration-container {
+	position: relative;
+	transform: translateY(-100px);
+	height: 90px;
+	padding: 25px 0 0 30px;
+	background-color: #2f87c0;
+	color: #e8fffe;
+	opacity: 0;
+	transition: 0.3s all ease-in-out;
+}
+.team-button-disconnect {
+	background-color: #b04d39;
+}
+.team-member-name {
+	margin-left: 20px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+.team-timer {
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.team-call-ongoing .call-duration-container {
+	opacity: 1;
+	transform: translateY(0);
+}
+.team-call-ongoing .list-team-member {
+	transform: translateY(0);
+}
+
+/************** Right Section Ends *******************/
+/************** Dummy Left Section Starts *******************/
+.left-modal-section {
+	position: absolute;
+	background-color: #4394c8;
+	color: #e8fffe;
+	padding: 20px 30px;
+	width: 65%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.back-container {
+	cursor: pointer;
+}
+.back-text {
+	margin-left: 10px;
+}
+.back-symbol {
+	font-size: 14px;
+	color: #a4d4f7;
+}
+.user-body-container {
+	margin-top: 35px;
+	text-align: center;
+	position: relative;
+	transition: 0.3s all ease-in-out;
+}
+.user-upper-section {
+	height: 100px;
+}
+.pic-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: black;
+}
+.user-contact-circle {
+	height: 35px;
+	width: 35px;
+	background-color: #2e74a6;
+	border: 1px solid #e8fffe;
+	border-radius: 50%;
+	position: relative;
+	transform: translateY(-50%);
+	left: 0;
+	top: 50%;
+	margin: 0 30px;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+	opacity: 1;
+}
+.animated .call-circle {
+	opacity: 0;
+	left: 45px;
+}
+.animated .message-circle {
+	opacity: 0;
+	left: -45px;
+}
+.user-name-container {
+	margin-top: 20px;
+}
+.user-name {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.points-container {
+	margin-top: 10px;
+}
+.ratings-bar-container {
+	width: 200px;
+	height: 10px;
+	background-color: #dfe5ee;
+	margin: 10px auto;
+	border-radius: 6px;
+	position: relative;
+}
+.ratings-bar-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #33aac6;
+	height: 100%;
+	border-radius: 6px;
+	transition: 0.3s all;
+}
+.ratings-bar-inner-fixed-width {
+	width: 0px !important;
+}
+.user-basic-details-container {
+	margin-top: 20px;
+}
+.user-designation {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.user-email {
+	margin-top: 10px;
+	letter-spacing: 1px;
+	color: #a7cfee;
+}
+.additional-details-container {
+	margin-top: 30px;
+	transition: 0.3s all;
+	transform: translateY(0px);
+	opacity: 1;
+}
+.additional-details-container.additional-animation {
+	transform: translateY(100px);
+	opacity: 0;
+}
+.right-detail-section.detail-section.inline-el {
+	margin-left: 100px;
+}
+.detail-section {
+	text-align: left;
+}
+.detail-container {
+	margin-top: 20px;
+}
+.detail-label {
+	color: #76b5e2;
+	font-size: 12px;
+}
+.detail-text {
+	margin-top: 5px;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+.calling-text {
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+.call-button-section {
+	margin-top: 35px;
+}
+.button-container {
+	width: 120px;
+	margin: auto;
+}
+.button-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.button-disconnect {
+	background-color: #b04d39;
+	position: relative;
+	left: -30px;
+	transition: 0.5s all ease-in-out;
+}
+.button-mute {
+	background-color: #2e76a9;
+	margin-right: 20px;
+	position: relative;
+	opacity: 0;
+	transition: 0.5s all ease-in-out;
+	left: 30px;
+}
+.calling-timer {
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+.call-in-progress .call-show {
+	display: block;
+}
+.call-show {
+	display: none;
+}
+.call-in-progress .call-hide{
+	display: none;
+}
+.call-in-progress .call-invisible {
+	visibility: hidden;
+}
+.call-in-progress .user-body-container {
+	transform: translateY(60px);
+}
+.call-duration-on .button-mute {
+	opacity: 1;
+	left: 0;
+}
+.call-duration-on .button-disconnect {
+	left: 0;
+}
+.call-duration-on  .ongoing-call-hide {
+	display: none;
+}
+.ongoing-call-show {
+	display: none;
+}
+.call-duration-on  .ongoing-call-show {
+	display: block;
+}
+/************** Dummy Left Section Ends *******************/

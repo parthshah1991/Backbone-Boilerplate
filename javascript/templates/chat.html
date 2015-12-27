@@ -1,0 +1,38 @@
+<div class = "header-left-container inline-el header-container">
+	<div class = "name-container inline-el"><%=name%></div>
+	<div class="medium-container">
+		<div class = "contact-container medium inline-el">
+			<div class="circle"></div>
+		</div>
+		<div class = "call-container medium inline-el">
+			<div class="circle"></div>
+		</div>
+		<div class = "message-container medium inline-el">
+			<div class="circle"></div>
+		</div>
+	</div>
+</div>
+<div class="chats-container">
+	<div class="chat-lists">
+		<%for (var index=0; index<chats.length; index++) {%>
+			<div class="chat-item-container hide-opacity">
+				<div class="member-pic inline-el"></div>
+				<div class="chat-information inline-el">
+				<div class="chat-author"><%=chats[index].author%></div>
+				<div class="chat-text"><%=chats[index].text%></div>
+				</div>
+				<% if (chats[index].attachment) {%>
+					<div class="chat-attachment-container">
+						<span class="attachment-symbol"></span>
+						<span class="attachment-file-name"><%= chats[index].attachment_text %></span>
+						<span class="close-icon">+</span>
+					</div>
+				<% }%>
+			</div>
+		<%}%>
+	</div>
+	<div class="chat-input-container">
+		<input type="text" class="input-chat-text" placeholder="Type a Message ..."/>
+		<div class="attachment-symbol"></div>
+	</div>
+</div>
