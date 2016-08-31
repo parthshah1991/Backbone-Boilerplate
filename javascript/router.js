@@ -3,7 +3,7 @@ define (['backbone'
 	var AppRouter =  Backbone.Router.extend({
 		
 		routes: {
-			':site/'	: 	'homePage'
+			':site/'	: 	'chandanPage'
 		},
 			
 		initialize : function () {
@@ -12,6 +12,11 @@ define (['backbone'
 
 		homePage: function () {
 			var path = 'views/home_page';
+			this.startIndexView(path);
+		},
+
+		chandanPage: function () {
+			var path = 'views/chandan/chandanPage';
 			this.startIndexView(path);
 		},
 

@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+
+.btn {
+	display: inline-block;
+	margin-left: 20px;
+	height: 35px;
+	border: 2px solid black;
+}
+
+.form-1, .form-2 {
+	margin-top: 30px;
+	display: none;
+}
+
+
+.main-container.btn-one-select .form-1{
+	display: block;
+}
+
+.main-container.btn-two-select .form-2{
+	display: block;
+}
+
+.row-1, .row-2 {
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.box {
+	height: 100px;
+	width: 100px;
+}
+
+.blue {
+	background-color: blue;
+}
+
+
+.red {
+	background-color: red;
+}
+
+.black {
+	background-color: black;
+}
+
