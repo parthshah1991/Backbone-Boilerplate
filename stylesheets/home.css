@@ -1,0 +1,115 @@
+.header-container .header-logo {
+  background-image: url(convoy-logo.png);
+  width: 120px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.header-container {
+  height: 36px;
+}
+.header-container .nav-list {
+  margin-left: 44px;
+}
+.header-container .nav-item {
+  cursor: pointer;
+  padding: 15px 30px;
+}
+.header-container .nav-item.active {
+  border-bottom: 4px solid #F65335;
+}
+
+.main-container {
+  background-color: #f7f9fa;
+  padding: 20px 0;
+}
+
+.restrict-width {
+  max-width: 760px;
+  margin: auto;
+}
+
+.main-container .sort-container {
+  border: 1px solid #D6DADC;
+  padding: 16px 20px;
+  border-radius: 4px;
+}
+.main-container .list-container {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.single-offer-container {
+  font-size: 0;
+}
+
+.single-offer-container:not(:last-child) {
+  border-bottom: 1px solid #D6DADC;
+}
+
+.src-place {
+  font-weight: bold;
+  font-size: 18px;
+}
+.src-time {
+  color: #7F8D99;
+}
+.offer-section {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 30px 28px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offer-section.src-dest-section {
+  width: 50%;
+}
+
+.src-dest-container {
+  margin-left: 10px;
+}
+.src-place.dest {
+  margin-top: 20px;
+}
+
+.sym-circle {
+  width: 8px;
+  height: 8px;
+  background: #B5BBBE;
+  border: 1px solid #B5BBBE;
+  border-radius: 4px;
+}
+
+.sym-circle.top {
+  margin-top: 8px;
+}
+.sym-line {
+  height: 56px;
+  border-right: 2px solid #B5BBBE;
+  margin-right: 3px;
+}
+
+.price-container {
+  font-size: 18px;
+  color: #49A54E;
+  font-weight: bold;
+  padding-right: 0;
+}
+
+.footer-container {
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: #848E93;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

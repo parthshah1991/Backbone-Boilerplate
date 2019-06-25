@@ -1,0 +1,27 @@
+
+<div class="offer-section src-dest-section inline-el">
+  <div class="src-dest-symbol inline-el">
+    <div class="sym-circle top"></div>
+    <div class="sym-line"></div>
+    <div class="sym-circle bottom"></div>
+  </div>
+  <div class="src-dest-container inline-el">
+    <div class="src-place"><%= data.origin.city %>, <%= data.origin.state %></div>
+    <div class="src-time"><%= data.origin.pickup.mergedDate %></div>
+
+    <div class="src-place dest"><%= data.destination.city %>, <%= data.destination.state %></div>
+    <div class="src-time"><%= data.destination.dropoff.mergedDate %></div>
+
+  </div>
+
+</div>
+<div class="offer-section random-text inline-el">53' Reefer</div>
+
+<div class="offer-section miles-container inline-el">
+  <span><%= data.miles %></span>
+  <span>miles</span>
+</div>
+<div class="offer-section price-container inline-el">
+  <span>$</span>
+  <span><%= data.offer %></span>
+</div>
