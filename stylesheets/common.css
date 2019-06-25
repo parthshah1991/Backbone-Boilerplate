@@ -1,10 +1,16 @@
 * {
 	box-sizing: border-box;
 }
+
+@font-face {
+  font-family: proxi;
+  src: url(proximanova-regular.otf);
+}
 body {
-	padding: 30px;
+	padding: 28px;
 	margin: 0;
 	min-width: 1024px;
+	font-family: proxi;
 }
 
 .main-container {
