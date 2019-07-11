@@ -3,7 +3,7 @@ var path = require('path');
 
 var app = new express();
 
-var port = process.env.PORT || 3000;
+app.set('port', (process.env.PORT || 8000));
 
 
 const router = express.Router();
@@ -15,6 +15,6 @@ app.get('/', function (req, res) {
 });
 
 
-var server = app.listen(port, function () {
-  console.log("Started on " + port);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
