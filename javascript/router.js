@@ -3,11 +3,12 @@ define (['backbone'
 	var AppRouter =  Backbone.Router.extend({
 		
 		routes: {
-			''	: 	'homePage'
+			// '/(.*)/'	: 	'homePage'
 		},
 			
 		initialize : function () {
 			this.handleHREF();
+			this.homePage();
 		},
 
 		homePage: function () {
